@@ -28,6 +28,7 @@ const MovieContextProvider = (props) => {
         setUrl,
         query,
         setQuery,
+        searchResult,
         API_URL,
       }}
     >
