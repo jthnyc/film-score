@@ -6,7 +6,7 @@ const DetailMovie = (props) => {
     <div className="result-detail">
       <h3>{props.title}</h3>
       <p>{props.year}</p>
-      <img src={props.img} />
+      <img src={props.img} alt={props.title} />
     </div>
   );
 };

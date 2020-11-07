@@ -14,9 +14,7 @@ const MovieContextProvider = (props) => {
   useEffect(() => {
     const fetchData = async () => {
       const response = await Axios(url);
-      console.log("RESPONES: ", response);
       const result = response.data["results"] || [];
-      console.log("RESULT === ", result);
       setSearchResult(result);
     };
     fetchData();

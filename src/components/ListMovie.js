@@ -6,7 +6,7 @@ const img_URL = `https://image.tmdb.org/t/p/w200`;
 
 const ListMovie = () => {
   const { query, searchResult } = useContext(MovieContext);
-  console.log("SEARCH RESULT: ", searchResult);
+  // console.log("SEARCH RESULT: ", searchResult);
   return (
     <div>
       {query ? (
