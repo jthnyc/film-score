@@ -1,7 +1,7 @@
 import React from "react";
 
 const DetailMovie = (props) => {
-  console.log("PROPS: ", props);
+  // console.log("PROPS: ", props);
   return (
     <div className="result-detail">
       <h3>{props.title}</h3>

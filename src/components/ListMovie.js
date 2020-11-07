@@ -12,12 +12,12 @@ const ListMovie = () => {
       {query ? (
         <div>
           <h5>Results for "{query}"</h5>
-          <div className="result-list-container">
+          <div className="result-container">
             {searchResult.map((result) => (
               <DetailMovie
                 key={result.id}
                 title={result.original_title}
-                year={result.release_date}
+                year={result.release_date.substring(0, 4)}
                 img={img_URL + result.poster_path}
               />
             ))}
